@@ -12,6 +12,7 @@ services:
     build: ./backend
     volumes:
       - ./backend:/app
+      - django_media:/app/media
     ports:
       - "8000:8000"
     environment:
@@ -34,3 +35,4 @@ services:
     
 volumes:
   postgres_data:
+  django_media:

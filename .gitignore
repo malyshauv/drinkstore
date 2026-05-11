@@ -1,18 +1,39 @@
-# Python
+# === Python / Django ===
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-db.sqlite3
-
-# Node
-node_modules/
-dist/
-
-# Environments
+*.py[cod]
+*$py.class
 .env
 .venv
 env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+db.sqlite3
+db.sqlite3-journal
 
-# Docker
-.docker/
+# === Django Media & Static ===
+media/
+static/
+!static/keep.txt
+
+# === Docker ===
+.docker-compose.override.yml
+
+# === Frontend (React / Vite) ===
+node_modules/
+dist/
+dist-ssr/
+*.local
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
